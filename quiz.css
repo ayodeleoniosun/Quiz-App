@@ -11,7 +11,7 @@ button {
 
 .subject {
   margin-top: 10px;
-  margin-right: 1000px;
+  margin-right: 62.5rem;
   text-align: left;
   color: #3a3a3a;
   display: inline;
@@ -65,7 +65,7 @@ h3 {
 #time {
   background-color: powderblue;
   text-align: right;
-  color: #3a3a3a;
+  color: #0014ff;
   font-weight: 700;
 }
 
