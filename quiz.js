@@ -1,4 +1,4 @@
- /** @format */
+/** @format */
 
 var minutes = 120;
 
