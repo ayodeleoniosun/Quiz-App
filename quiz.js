@@ -6,7 +6,7 @@ let hour = minutes / 60;
 
 var seconds = minutes * 60;
 
-timerdiv = document.getElementById("time");
+let timerdiv = document.getElementById("time");
 
 let countdownInterval = setInterval(function () {
   let minutesleft = Math.floor(seconds / 60) % 60;
