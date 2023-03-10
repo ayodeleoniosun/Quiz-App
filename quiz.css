@@ -1,4 +1,4 @@
-/** @format */
+ /** @format */
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 button {
@@ -11,7 +11,7 @@ button {
 
 .subject {
   margin-top: 10px;
-  margin-right: 900px;
+  margin-right: 1000px;
   text-align: left;
   color: #3a3a3a;
   display: inline;
@@ -65,7 +65,7 @@ h3 {
 #time {
   background-color: powderblue;
   text-align: right;
-  color: #0014ff;
+  color: #3a3a3a;
   font-weight: 700;
 }
 
