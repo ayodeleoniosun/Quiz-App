@@ -1,4 +1,33 @@
-/** @format */
+ /** @format */
+
+var minutes = 120;
+
+let hour = minutes / 60;
+
+var seconds = minutes * 60;
+
+timerdiv = document.getElementById("time");
+
+let countdownInterval = setInterval(function () {
+  let minutesleft = Math.floor(seconds / 60) % 60;
+  let secondsleft = seconds % 60;
+  let hourLeft = Math.floor(seconds);
+
+  seconds--;
+
+  if (secondsleft < 0) {
+    secondsleft = "0" + secondsleft;
+    timerdiv.style.color = "red";
+  }
+
+  timerdiv.innerHTML = minutesleft + " : " + secondsleft;
+
+  if (seconds < 0) {
+    clearInterval(countdownInterval);
+    timerdiv.innerHTML = "Time Expired";
+    timerdiv.style.color = "red";
+  }
+}, 1000);
 
 function buildQuiz() {
   const output = [];
@@ -87,7 +116,7 @@ const myQuestions = [
       C: "Netflix",
       D: "Google",
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
   },
   {
     question: "Which one of the following is not an area in Ibadan?",
