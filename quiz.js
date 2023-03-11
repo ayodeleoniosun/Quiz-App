@@ -145,6 +145,7 @@ const myQuestions = [
       A: "Douglas Crockford",
       B: "Sheryl Sandberg",
       C: "Brendan Eich",
+      D: "Dailem shaw",
     },
     correctAnswer: "C",
   },
@@ -154,6 +155,7 @@ const myQuestions = [
       A: "Node.js",
       B: "TypeScript",
       C: "npm",
+      D: "Command Prompt
     },
     correctAnswer: "C",
   },
