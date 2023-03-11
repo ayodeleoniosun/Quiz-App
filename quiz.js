@@ -155,7 +155,7 @@ const myQuestions = [
       A: "Node.js",
       B: "TypeScript",
       C: "npm",
-      D: "Command Prompt
+      D: "Command Prompt"
     },
     correctAnswer: "C",
   },
