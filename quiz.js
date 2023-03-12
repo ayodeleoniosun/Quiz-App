@@ -1,4 +1,12 @@
-/** @format */
+ /** @format */
+
+// swalbtn.onclick(function () {
+//   swal.fire({
+//     icon: "info",
+//     title: "Are You Sure",
+//     text: "You cannot go back after Submition",
+//   });
+// });
 
 var minutes = 120;
 
@@ -6,13 +14,11 @@ let hour = minutes / 60;
 
 var seconds = minutes * 60;
 
-let timerdiv = document.getElementById("time");
+timerdiv = document.getElementById("time");
 
 let countdownInterval = setInterval(function () {
   let minutesleft = Math.floor(seconds / 60) % 60;
   let secondsleft = seconds % 60;
-  let hourLeft = Math.floor(seconds);
-
   seconds--;
 
   if (secondsleft < 0) {
@@ -28,6 +34,8 @@ let countdownInterval = setInterval(function () {
     timerdiv.style.color = "red";
   }
 }, 1000);
+
+countdownInterval;
 
 function buildQuiz() {
   const output = [];
@@ -145,7 +153,6 @@ const myQuestions = [
       A: "Douglas Crockford",
       B: "Sheryl Sandberg",
       C: "Brendan Eich",
-      D: "Dailem shaw",
     },
     correctAnswer: "C",
   },
@@ -155,7 +162,6 @@ const myQuestions = [
       A: "Node.js",
       B: "TypeScript",
       C: "npm",
-      D: "Command Prompt"
     },
     correctAnswer: "C",
   },
@@ -216,12 +222,27 @@ showSlide(currentSlide);
 
 // event listener
 
+// let competeScore = showResult();
+
 previousButton.addEventListener("click", previous);
 nextButton.addEventListener("click", next);
+
 submitButton.addEventListener("click", () => {
-  if (confirm("Click OK to check Result") == true) {
-    showResult();
-  } else {
-    previous();
-  }
+  swal({
+    title: "Are you sure ?",
+    text: "Once Submitted, you will not be able to return back!",
+    icon: "warning",
+    buttons: true,
+    buttons: ["Back To Quiz", "Submit Quiz"],
+    dangerMode: true,
+  }).then((willDelete) => {
+    if (willDelete) {
+      swal("Successful! Your result has been saved!", {
+        icon: "success",
+        result: showResult(),
+      });
+    } else {
+      swal(previous());
+    }
+  });
 });
