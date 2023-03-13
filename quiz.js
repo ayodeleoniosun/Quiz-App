@@ -152,10 +152,10 @@ const myQuestions = [
     answers: {
       A: "Douglas Crockford",
       B: "Sheryl Sandberg",
-      C: "Brendan Eich",
-      D: "Thomas Plumkings"
+      C:"Thomas Plumkings",
+      D: "Breidan Eich"
     },
-    correctAnswer: "C",
+    correctAnswer: "D",
   },
   {
     question: "Which one of these is a JavaScript package manager?",
