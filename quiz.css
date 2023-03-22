@@ -1,13 +1,13 @@
  /** @format */
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-button {
+/* button {
   margin-top: 48px;
   padding: 8px;
   background-color: powderblue;
   border-radius: 12px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+} */
   
 
 .instruction {
@@ -17,9 +17,6 @@ button {
   line-height: 1.5;
   padding-left: 40px;
 }
- 
-
- 
 
 .subjectdiv {
   display: flex;
@@ -35,7 +32,6 @@ button {
 
 #time {
   background-color: powderblue;
-
   color: #3a3a3a;
   display: flex;
   font-weight: 700;
@@ -59,6 +55,7 @@ button {
   font-family: "Work Sans", sans-serif;
   color: #3a3a3a;
   text-align: left;
+ font-weight: bold;
   padding-left: 43px;
  
 }
@@ -104,7 +101,7 @@ button {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
   color: #0014ff;
-  padding: 15px;
+  padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
   border-color: white;
@@ -119,16 +116,8 @@ button:hover {
   color: rgba(255, 255, 255, 1);
   background-color: #0014ff;
 }
-/** @format */
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
-/* button {
-  margin-top: 48px;
-  padding: 8px;
-  background-color: powderblue;
-  border-radius: 12px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-} */
+/** @format */ 
+ 
 
 .subject {
   margin-top: 10px;
@@ -139,12 +128,7 @@ button:hover {
   font-size: 22px;
 }
 
-.instruction {
-  text-align: left;
-  justify-content: left;
-
-  padding-left: 40px;
-}
+ 
 body {
   background-color: whitesmoke;
   font-weight: 300;
@@ -207,32 +191,9 @@ h5 {
   top: 500px;
 }
  
-#results {
-  padding-top: 10px;
-  color: green;
-  display: inline-block;
-}
-
-.active-slide {
-  opacity: 1;
-  z-index: 2;
-}
+ 
 
  
-/* 
-button {
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
-  color: #0014ff;
-  padding: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-color: white;
-  cursor: auto;
-  border-radius: 0.25rem;
-  vertical-align: middle;
-  /* background-color: #537d57; */
-} */
 
 button:hover {
   color: rgba(255, 255, 255, 1);
