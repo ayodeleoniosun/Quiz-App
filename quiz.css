@@ -123,13 +123,13 @@ button:hover {
 /** @format */
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-button {
+/* button {
   margin-top: 48px;
   padding: 8px;
   background-color: powderblue;
   border-radius: 12px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+} */
 
 .subject {
   margin-top: 10px;
@@ -207,6 +207,7 @@ h5 {
   position: absolute;
   top: 500px;
 }
+ 
 #results {
   padding-top: 10px;
   color: green;
@@ -219,7 +220,7 @@ h5 {
 }
 
  
-
+/* 
 button {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
@@ -232,7 +233,7 @@ button {
   border-radius: 0.25rem;
   vertical-align: middle;
   /* background-color: #537d57; */
-}
+} */
 
 button:hover {
   color: rgba(255, 255, 255, 1);
