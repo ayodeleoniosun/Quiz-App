@@ -8,6 +8,170 @@ button {
   border-radius: 12px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/* 
+.subject {
+  color: #3a3a3a;
+  display: flex;
+  font-size: 22px;
+} */
+
+.instruction {
+  text-align: left;
+  justify-content: left;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  padding-left: 40px;
+}
+/* body {
+  background-color: whitesmoke;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  line-height: 2;
+  color: #3a3a3a;
+  font-size: 20px;
+} */
+
+/* h1 {
+  font-size: 18px;
+  color: #0014ff;
+  font-weight: 600;
+  max-width: 80%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+} */
+
+/* #copy {
+  margin-bottom: 200px;
+  background-color: powderblue;
+  padding-bottom: 10px;
+  height: 30vh;
+} */
+
+.subjectdiv {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  height: 60px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding-left: 40px;
+}
+
+/* h3 {
+  max-width: 80%;
+  color: #0014ff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto;
+} */
+
+#time {
+  background-color: powderblue;
+
+  color: #3a3a3a;
+  display: flex;
+  font-weight: 700;
+}
+
+.slide {
+  margin-top: 25px;
+  padding-bottom: 5px;
+  background-color: whitesmoke;
+  color: #333;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0s;
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  width: 100%;
+}
+
+.question {
+  font-family: "Work Sans", sans-serif;
+  color: #3a3a3a;
+  /* font-size: 25px; */
+  /* line-height: 1; */
+  text-align: left;
+  padding-left: 43px;
+  /* font-weight: 600; */
+  /* margin: auto; */
+}
+
+.line {
+  margin-top: 10px;
+}
+
+.answers label {
+  display: block;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  text-align: left;
+  padding-left: 40px;
+}
+
+.buttondiv {
+  display: flex;
+  justify-content: space-around;
+  -ms-flex-order: 2;
+  margin-top: 10px;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 500px;
+}
+
+#results {
+  padding-top: 10px;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  color: green;
+  display: inline-block;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+button {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  color: #0014ff;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-color: white;
+  cursor: auto;
+  border-radius: 0.25rem;
+
+  vertical-align: middle;
+  /* background-color: #537d57; */
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: #0014ff;
+}
+/** @format */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+button {
+  margin-top: 48px;
+  padding: 8px;
+  background-color: powderblue;
+  border-radius: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 .subject {
   margin-top: 10px;
@@ -36,7 +200,7 @@ body {
   font-size: 20px;
 }
 
-h1 {
+/* h1 {
   font-size: 25px;
   color: #0014ff;
   font-weight: 700;
@@ -45,7 +209,7 @@ h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
-}
+} */
 
 #copy {
   padding-bottom: 20px;
@@ -56,8 +220,19 @@ h1 {
 h3 {
   max-width: 80%;
   color: #0014ff;
-  font-size: 21px;
-  font-weight: 700;
+  /* font-size: 21px;
+  font-weight: 700; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto;
+}
+
+h5 {
+  margin: auto;
+  max-width: 80%;
+  color: #0014ff;
+  /* font-size: 21px;
+  font-weight: 700; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: auto;
@@ -68,21 +243,23 @@ h3 {
   color: #3a3a3a;
   font-weight: 700;
 }
-
+/* 
 .slide {
   margin-top: 25px;
   padding-bottom: 5px;
   background-color: whitesmoke;
   color: #333;
-  z-index: 1;
-  opacity: 0.5;
+  /* z-index: 1; */
+
+/* opacity: 0.5;
   transition: opacity 0.5s;
   position: absolute;
   top: 240px;
   left: 0px;
   width: 100%;
-}
-.question {
+} */
+
+/* .question {
   font-family: "Work Sans", sans-serif;
   color: #3a3a3a;
   font-size: 25px;
@@ -91,12 +268,12 @@ h3 {
   padding-left: 43px;
   font-weight: 600;
   margin: auto;
-}
+} */
 
 .line {
   margin-top: 10px;
 }
-
+/* 
 .answers {
   font-family: "Work Sans", sans-serif;
   color: #3a3a3a;
@@ -104,15 +281,15 @@ h3 {
   font-weight: bold;
   display: block;
   padding-top: 5px;
-}
+} */
 
-.answers label {
+/* .answers label {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: left;
   padding-left: 40px;
-}
+} */
 .buttondiv {
   display: flex;
   justify-content: space-around;
@@ -134,13 +311,13 @@ h3 {
   z-index: 2;
 }
 
-.quiz-container {
+/* .quiz-container {
   background-color: whitesmoke;
   position: relative;
   height: 100px;
   margin-top: 40px;
   color: red;
-}
+} */
 
 button {
   box-sizing: border-box;
@@ -152,7 +329,6 @@ button {
   border-color: white;
   cursor: auto;
   border-radius: 0.25rem;
-
   vertical-align: middle;
   /* background-color: #537d57; */
 }
