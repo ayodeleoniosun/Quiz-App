@@ -1,3 +1,4 @@
+ // alert("we are here")
  /** @format */
 
 // swalbtn.onclick(function () {
@@ -241,7 +242,8 @@ submitButton.addEventListener("click", () => {
     if (willDelete) {
       swal("Successful! Your result has been saved!", {
         icon: "success",
-        result: showResult(),
+        results: showResult(),
+        result: showSlide(0),
       });
     } else {
       swal(previous());
