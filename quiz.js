@@ -7,7 +7,25 @@
 //     title: "Are You Sure",
 //     text: "You cannot go back after Submition",
 //   });
-// });
+// // });
+
+// const options = answerContainer.querySelectorAll("input[type=radio]")
+// const correctOption = answerContainer.querySelectorAll(`input{value=${currentQuestion.correctAnswer}}`)
+
+// options.forEach(option => {
+//   if(option.checked) {
+//     if(option.value === currentQuestion.correctAnswer) {
+//       option.parentElement.style.color = "lightgreen"
+//     }
+//     else {
+//       option.parentElement.style.color = "red"
+//       correctOption.parentElement.style.color = "lightgreen"
+
+
+//     }
+//   }
+// })
+
 
 var minutes = 120;
 
@@ -60,7 +78,7 @@ function buildQuiz() {
   });
   quizContainer.innerHTML = output.join("");
 }
-
+ 
 function showResult() {
   const answerContainers = quizContainer.querySelectorAll(".answers");
 
@@ -70,14 +88,24 @@ function showResult() {
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+   
+    const correctOption = answerContainer.querySelector(`input[value=${currentQuestion.correctAnswer}]`)
 
     if (userAnswer === currentQuestion.correctAnswer) {
       numCorrect++;
 
-      answerContainers[questionNumber].style.color = "lightgreen";
-    } else {
-      answerContainers[questionNumber].style.color = "red";
     }
+
+    const options = answerContainer.querySelectorAll("input[type=radio]")
+
+options.forEach(option => {
+  const optionLabel = option.parentElement;
+  optionLabel.style.color = (option.value === currentQuestion.correctAnswer) ? "lightgreen" : "red"
+  if(option.checked) {
+   optionLabel.style.fontWeight = "bold"
+  }
+
+})
   });
 
   resultsContainer.innerHTML = ` Result : ${Math.round(
