@@ -87,7 +87,8 @@ function showResult() {
   myQuestions.forEach((currentQuestion, questionNumber) => {
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    // const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    const userAnswer = answerContainer.querySelector(selector).value || {};
    
     const correctOption = answerContainer.querySelector(`input[value=${currentQuestion.correctAnswer}]`)
 
